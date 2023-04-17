@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetX | Ecommerce Website Design</title>
+  <link rel="stylesheet" href="streetx.css">
+  <script type="text/javascript" src="streetx.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="streetx.html"><img src="images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="">Home</a></li>
+            <li><a href="streetxproduct.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu icon.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>Unleash Your <br>Inner Rebel!</h1>
+          <p>Join the streetwear revolution with StreetX - where style<br>  meets authenticity and creativity is king.</p>
+          <a href="streetxproduct.html" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="images/skateboard.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Categories -->
+  <div class="categories">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <img src="images/PINK HAIR.jpg">
+        </div>
+        <div class="col-3">
+          <img src="images/black jacket.jpg">
+        </div>
+        <div class="col-3">
+          <img src="images/grey jacket.jpg">
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html"><img src="images/black tee.jpg"></a>
+          <h4>Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/white plain tshirt.jpg">
+          <h4>White Plain T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/black longsleeve.jpg">
+          <h4>Black Longsleeved Shirts</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$60.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/green nike.jpg">
+          <h4>Nike</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$120.00</p>
+        </div>
+      </div>
+      <!-- Latest Products -->
+      <h2 class="title">Latest Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="images/glasses.jpg">
+          <h4>Black No Fear Sunglasses</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$35.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/headwarmer.jpg">
+          <h4>Colored Head Warmers</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$15.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/yellow jacket2.jpg">
+          <h4>Yellow Puff Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$100.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/red nike.jpg">
+          <h4>Red Air Jordans</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$64.00</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offer -->
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/yellow dr martens.png" class="offer-img">
+          </div>
+          <div class="col-2">
+            <p>Exclusively Available on StreetX</p>
+            <h1>Yellow Dr Marten Boots</h1>
+            <small>
+              These boots are made with air-cushioned sole and Goodyear welt construction, ensuring maximum comfort and long-lasting durability.
+            </small>
+            <br>
+            <a href="" class="btn">Buy Now &#8594;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>"I recently discovered StreetX and I have to say, I'm blown away by their selection of streetwear. The quality of their clothing and accessories is top-notch, and their designs are truly unique and stylish.
+              I'm definitely going to be a repeat customer!"</p>
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="images/testimonial.jpg">
+              <h3>Damson James</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>I was so impressed by their customer service - when I had a question about sizing, their team was quick to respond and incredibly helpful. The ordering process was seamless, and my package arrived on time and in perfect condition.</p>
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="images/testimonial2.jpg">
+              <h3>Ene Sarafa</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>"As someone who's passionate about streetwear, I'm always on the lookout for brands that stand out from the rest. StreetX is one of those brands - their designs are edgy and cool, and their products are made to last. StreetX rocks!"</p>
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="images/testimonial4.jpg">
+              <h3>Grace Timini</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Brands -->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="images/nike brand.png">
+          </div>
+          <div class="col-5">
+            <img src="images/adidasbrand1.png">
+          </div>
+          <div class="col-5">
+            <img src="images/cocacola brand.png">
+          </div>
+          <div class="col-5">
+            <img src="images/lv brand.png">
+          </div>
+          <div class="col-5">
+            <img src="images/puma brand.png">
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/White logo.png">
+              <p>Our purpose is to inspire and empower the next generation of streetwear enthusiasts to be bold, authentic, and unapologetic.</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2023 - Precious Onma Adekwu</p>
+        </div>
+      </div>
+</body>
+</html>

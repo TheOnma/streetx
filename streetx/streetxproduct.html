@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - StreetX | Ecommerce Website Design</title>
+  <script type="text/javascript" src="streetx.js"></script>
+  <link rel="stylesheet" href="streetx.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  
+</head>
+<body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" width="125px">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="streetx.html">Home</a></li>
+            <li><a href="streetxproduct.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu icon.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+
+
+    <!-- All Products Details -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option>Default Sorting</option>
+          <option>Sort by price</option>
+          <option>Sort by popularity</option>
+          <option>Sort by rating</option>
+          <option>Sort by sale</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <a href="product-details.html"><img src="images/black tee.jpg"></a>
+          <h4>Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/white plain tshirt.jpg">
+          <h4>White Plain T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/black longsleeve.jpg">
+          <h4>Black Longsleeved Shirts</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$60.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/green nike.jpg">
+          <h4>Nike</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$120.00</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-4">
+          <img src="images/glasses.jpg">
+          <h4>Black No Fear Sunglasses</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$35.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/headwarmer.jpg">
+          <h4>Colored Head Warmers</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$15.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/yellow jacket2.jpg">
+          <h4>Yellow Puff Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$100.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/red nike.jpg">
+          <h4>Red Air Jordans</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$64.00</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <img src="images/White nike air.jpg">
+          <h4>White Nike Air</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$60.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/yeezy slides.jpg">
+          <h4>Yeezy Slides</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$95.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/yeezy 350.jpg">
+          <h4>Yeezy 350</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$130.00</p>
+        </div>
+        <div class="col-4">
+          <img src="images/pink crocs.jpg">
+          <h4>Pink Crocs</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$55.00</p>
+        </div>
+      </div>
+      
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594</span>
+      </div>
+    </div>
+    
+
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/White logo.png">
+              <p>Our purpose is to inspire and empower the next generation of streetwear enthusiasts to be bold, authentic, and unapologetic.</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Useful Links</h3>
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Follow us</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2023 - Precious Onma Adekwu</p>
+        </div>
+      </div>
+</body>
+</html>
