@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-      <div class="navbar">
+      <div class="navbar about">
         <div class="logo">
           <a href="streetx.html"><img src="images/logo.png" width="125px"></a>
         </div>
@@ -39,7 +39,7 @@
             <img src="images/skateboard.jpg" width="100%">
           </div>
           <div class="col-2">
-            <div>
+            <div class="about-story">
               <h1>Our Story</h1>
               <p>StreetX is a streetwear brand that was founded in 2023 by <b>Precious Onma Adekwu</b>. 
                 Growing up in Nigeria, Onma was always drawn to the energy of the streets. She loved the way the vibrant colors, textures, and patterns of traditional Nigerian clothing told stories and conveyed a sense of pride and identity. As she got older, she began to develop an appreciation for streetwear - the way people used clothing to express themselves and their individuality.</p>
@@ -62,8 +62,8 @@
               <h3>Download Our App</h3>
               <p>Download App for Android and ios mobile phone.</p>
               <div class="app-logo">
-                <img src="images/play-store.png">
-                <img src="images/app-store.png">
+                <img src="images/playstore.png">
+                <img src="images/appstore.png">
               </div>
             </div>
             <div class="footer-col-2">
@@ -93,5 +93,35 @@
           <p class="copyright">Copyright 2023 - Precious Onma Adekwu</p>
         </div>
       </div>
+
+      <script type="text/javascript">
+        var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+    
+    // js for toggle form
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    
+    function register() {
+      RegForm.style.transform = "translateX(0px)";
+      LoginForm.style.transform = "translateX(0px)";
+      Indicator.style.transform = "translateX(100px)";
+    }
+    
+    function login() {
+      RegForm.style.transform = "translateX(300px)";
+      LoginForm.style.transform = "translateX(300px)";
+      Indicator.style.transform = "translateX(0px)";
+    }
+    
+      </script>
 </body>
 </html>
