@@ -9,7 +9,13 @@
   <script type="text/javascript" src="streetx.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-  
+  <script type="text/javascript">
+    <!--
+      function submit() {
+        alert("Thanks for contacting us. Your message has been successfully submitted!")
+      }
+    //-->
+  </script>
 </head>
 <body>
     <div class="container">
@@ -33,20 +39,21 @@
 
     <!-- Contact Us page -->
     <div class="contact-page">
-      <div class="container ">
+      <div class="container contact">
         <div class="row">
           <div class="col-2">
             <img src="images/black jacket.jpg" width="100%">
           </div>
-          <div class="row">
-            <div class="col-2">
-              <h1>Contact Us</h1>
-              <p>For any questions or concerns, please contact us using the form below.</p>
-              <form class="contact-form">
+          <div class="col-2">
+            <div class="form-container">
+              <h3><span>Contact Us</span></h3>
+              <p>For any questions or concerns, please contact us using this form.</p>
+              <form id="contact-form">
                 <input type="text" class="field" placeholder="Your Name">
                 <input type="email" class="field" placeholder="Your Email">
                 <input type="number" class="field" placeholder="Your Phone">
                 <textarea class="field" placeholder="Message"></textarea>
+                <input type="button" class="btn" onclick="submit()" value="Submit">
               </form>
             </div>
           <div>
@@ -66,8 +73,8 @@
               <h3>Download Our App</h3>
               <p>Download App for Android and ios mobile phone.</p>
               <div class="app-logo">
-                <img src="images/play-store.png">
-                <img src="images/app-store.png">
+                <img src="images/playstore.png">
+                <img src="images/appstore.png">
               </div>
             </div>
             <div class="footer-col-2">
@@ -97,5 +104,36 @@
           <p class="copyright">Copyright 2023 - Precious Onma Adekwu</p>
         </div>
       </div>
+
+      <script type="text/javascript">
+        var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+    
+    // js for toggle form
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    
+    function register() {
+      RegForm.style.transform = "translateX(0px)";
+      LoginForm.style.transform = "translateX(0px)";
+      Indicator.style.transform = "translateX(100px)";
+    }
+    
+    function login() {
+      RegForm.style.transform = "translateX(300px)";
+      LoginForm.style.transform = "translateX(300px)";
+      Indicator.style.transform = "translateX(0px)";
+    }
+
+    
+      </script>
 </body>
 </html>
